@@ -12,7 +12,7 @@ namespace Q1
         {
             string l = Console.ReadLine(); // Считываем данные
             string[] arr = l.Split(' ');
-                foreach(string s in args) 
+                foreach(string s in arr) 
             {
                 int x = int.Parse(s);// 
                 bool temp = true;
