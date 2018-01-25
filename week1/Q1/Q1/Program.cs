@@ -12,23 +12,31 @@ namespace Q1
         {
             string l = Console.ReadLine(); // Считываем данные
             string[] arr = l.Split(' ');
-                foreach(string s in arr) 
+            for (int i = 0; i < arr.Length; i++)
             {
-                int x = int.Parse(s);// 
                 bool temp = true;
-                for (int i = 2; i* i<x; i++){
-                    if(x % i == 0)// Проверка на простоту
-                    {
-                        temp = false;
-                        break;
-                    }
-                    if(temp && x != 1)//Удовлетворение условию задачи
-                    {
-                        Console.WriteLine(x);// Вывод данных 
-                    }
+                if (int.Parse(arr[i]) == 1)
+                {
+                    continue;
                 }
-                Console.ReadKey();
+                else for (int j = 2; j < Math.Sqrt(int.Parse(arr[i])); i++)
+                    {
+                        if (x % i == 0)
+                        {
+                            temp = false;
+                            break;
+                        }
+                        if (temp = true)
+                        {
+                            Console.Write(arr[i] + " ");
+                        }
+
+                    }
             }
-         }
+            Console.ReadKey();
+
+        }
     }
 }
+    
+

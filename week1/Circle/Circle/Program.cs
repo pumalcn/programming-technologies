@@ -22,6 +22,7 @@ namespace Circle
             return area = Math.PI * R * R;
         }
 
+
         public double F2(int R)
         {
             return diameter = 2 * R;
